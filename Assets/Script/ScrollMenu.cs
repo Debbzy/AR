@@ -11,6 +11,7 @@ public class ScrollMenu : MonoBehaviour
     public Text[] texts;
     public int targetFontSize = 95; // Ukuran font yang ditargetkan
     public int defaultFontSize = 70; // Ukuran font default
+    public GameObject[] GO;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +37,7 @@ public class ScrollMenu : MonoBehaviour
         Vector3 targetPosition;
         Vector2 targetOffset;
         int selectedTextIndex = -1;
-        
+
         if (aValue == "Scan")
         {
             targetPosition = new Vector3(0, 0, 0);
@@ -84,10 +85,19 @@ public class ScrollMenu : MonoBehaviour
         Color defaultColor;
         ColorUtility.TryParseHtmlString("#FFAA00", out selectedColor); // Warna untuk tombol yang dipilih
         ColorUtility.TryParseHtmlString("#B9B9B9", out defaultColor); // Warna untuk tombol lainnya
+
         for (int i = 0; i < texts.Length; i++)
         {
             // Simpan ukuran font awal dari setiap teks
             startFontSizes[i] = texts[i].fontSize;
+        }
+
+        foreach (GameObject go in GO)
+        {
+            if (go != null)
+            {
+                go.SetActive(false);
+            }
         }
 
         while (elapsedTime < transitionDuration)
@@ -116,6 +126,14 @@ public class ScrollMenu : MonoBehaviour
         {
             texts[i].fontSize = (i == selectedTextIndex) ? targetFontSize : defaultFontSize;
             texts[i].color = (i == selectedTextIndex) ? selectedColor : defaultColor;
+        }
+
+        if (selectedTextIndex >= 0 && selectedTextIndex < GO.Length)
+        {
+            if (GO[selectedTextIndex] != null)
+            {
+                GO[selectedTextIndex].SetActive(true);
+            }
         }
     }
 
