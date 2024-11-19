@@ -221,7 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _input: {fileID: 423862739}
   _background: {fileID: 2800000, guid: d017ae28e6d8fd445b8a955069fd35ab, type: 3}
-  _threshold: -0.064
+  _threshold: -0.1
   _resources: {fileID: 11400000, guid: fb70c5c0580b3fa4e929753f5f92bf3f, type: 2}
   _shader: {fileID: 4800000, guid: d2fdc31d3b1e1934394f08a3e0b1921f, type: 3}
 --- !u!114 &423862739
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a226377011916cd44863133d87a746da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _deviceName: NYK NEMESIS
+  _deviceName: OBS Virtual Camera
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
