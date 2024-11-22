@@ -11469,7 +11469,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: informasi
+          m_StringArgument: Scan
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 658090714}
@@ -11796,7 +11796,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 290090238}
   m_Direction: 2
   m_Value: 1.0000008
-  m_Size: 0.6709825
+  m_Size: 0.6709824
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
