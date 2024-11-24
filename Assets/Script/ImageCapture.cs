@@ -25,12 +25,12 @@ public class ImageCapture : MonoBehaviour
         string directoryPath = "/storage/emulated/0/DCIM/Screenshots/Menjelajah_Negara";
 
         // Pastikan folder ada atau buat jika tidak ada
-        if (!Directory.Exists(directoryPath))
-        {
-            Directory.CreateDirectory(directoryPath);
-        }
+        // if (!Directory.Exists(directoryPath))
+        // {
+        //     Directory.CreateDirectory(directoryPath);
+        // }
 
-        filename = directoryPath + "/" + DateTime.Now.ToString("MM_dd_yyyy_h_mm_ss") + ".jpg";
+        filename = directoryPath + "/" + DateTime.Now.ToString("MM_dd_yyyy_h_mm_ss") + ".png";
         ScreenCapture.CaptureScreenshot(filename, Resolution);
         Debug.Log("Screenshot saved to: " + filename);
     }
