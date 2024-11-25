@@ -14,4 +14,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Virtual Background/Room.unity
     guid: f1b72acd924f1d444bc4fb701a124aa8
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 05098494d65f23b4896a195ffdbd69ec, type: 2}
