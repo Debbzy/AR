@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
-    <ImageTarget name="MesirBook" size="10.000000 14.205967" />
-    <ImageTarget name="MesirCard" size="10.000000 15.673077" />
-    <ImageTarget name="BrazilCard" size="10.000000 15.673077" />
-    <ImageTarget name="AmerikaCard" size="10.000000 15.673077" />
-    <ImageTarget name="FranceCard" size="10.000000 15.673077" />
     <ImageTarget name="IndoCard" size="10.000000 15.673077" />
-    <ImageTarget name="IndoBook" size="10.000000 14.205967" />
-    <ImageTarget name="BrazilBook" size="10.000000 14.205967" />
+    <ImageTarget name="FranceCard" size="10.000000 15.673077" />
+    <ImageTarget name="AmerikaCard" size="10.000000 15.673077" />
+    <ImageTarget name="BrazilCard" size="10.000000 15.673077" />
+    <ImageTarget name="MesirCard" size="10.000000 15.673077" />
     <ImageTarget name="AmerikaBook" size="10.000000 14.205967" />
     <ImageTarget name="FranceBook" size="10.000000 14.205967" />
+    <ImageTarget name="BrazilBook" size="10.000000 14.205967" />
+    <ImageTarget name="MesirBook" size="10.000000 14.205967" />
+    <ImageTarget name="IndoBook" size="12.000000 17.047161" />
     <ImageTarget name="FrontCover" size="10.000000 14.205967" />
   </Tracking>
 </QCARConfig>
